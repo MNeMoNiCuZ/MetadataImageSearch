@@ -1,11 +1,14 @@
 # Metadata Image Search Tool
 
-A tool for searching PNG images based on their metadata, particularly useful for AI-generated images. Search through positive and negative prompts, and organize matching files with various output options.
+A tool for searching PNG images based on their metadata, particularly useful for AI-generated images. Search through positive or negative prompts, and organize matching files with various output options.
+
+![image](https://github.com/user-attachments/assets/c54657c0-4bb5-4cec-a981-2a45509df359)
+
+
 
 ## Requirements
 
 - Python 3.6 or higher
-- Windows operating system (for the provided batch scripts)
 
 ## Installation
 
@@ -21,10 +24,12 @@ The script will create:
 - `venv_activate.bat` for activating the environment
 - `venv_update.bat` for updating pip
 
+Alternatively create a virtual environment yourself.
+
 ## Usage
 
 ### GUI Mode (Default)
-Run `python metadata_search.py` to launch the graphical interface.
+Run the included `LaunchMetadataSearch.bah` or `python metadata_search.py` to launch the graphical interface.
 
 #### Search Options
 - **Folder Path**: Select the folder containing PNG images to search
@@ -34,9 +39,10 @@ Run `python metadata_search.py` to launch the graphical interface.
   - Example: `cat && black || dog && brown`
 - **Ignore Term**: Terms that will exclude matching files
   - Uses same syntax as Search Term
-- **Recursive Search**: Search in subfolders
+- **Recursive Search**: Searches in subfolders
 - **Case Sensitive**: Enable exact case matching
 - **Search Positive/Negative**: Choose which prompts to search in
+- **Regex**: Use regular expression patterns to filter results
 
 #### Output Options
 - **Copy To**: Copy matching files to specified folder
