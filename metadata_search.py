@@ -277,8 +277,8 @@ class MetadataSearcher:
         self.copy_path = copy_path
         self.move_path = move_path
         self.custom_filter = custom_filter
-        self.match_folder_structure = True  # Default to True
-        self.create_or_subfolders = False  # Default to False
+        self.match_folder_structure = True
+        self.create_or_subfolders = False
         self.search_positive = search_positive
         self.search_negative = search_negative
         self.case_sensitive = case_sensitive
@@ -289,6 +289,7 @@ class MetadataSearcher:
         # Lists to collect results
         self.found_files = []
         self.found_paths = []
+        self.output_paths = []
         self.copied_files = []
         self.moved_files = []
         
@@ -343,49 +344,49 @@ class MetadataSearcher:
         image_path, (or_index, or_term) = match_data
         filename = os.path.basename(image_path)
         self.found_files.append(filename)
-        self.found_paths.append(image_path)
+        self.found_paths.append(image_path)  # Keep track of original paths
         
-        if self.copy_path:
+        # Determine the destination path based on options
+        dest_path = None
+        if self.copy_path or self.move_path:
             if self.create_or_subfolders:
                 # Create subfolder based on the OR term
                 subfolder = sanitize_folder_name(or_term)
                 if self.match_folder_structure:
                     rel_path = os.path.relpath(os.path.dirname(image_path), self.search_root)
-                    dest_dir = os.path.join(self.copy_path, subfolder, rel_path)
+                    if rel_path == '.':
+                        # File is directly in search root, don't add '.' to path
+                        dest_dir = os.path.join(self.copy_path or self.move_path, subfolder)
+                    else:
+                        dest_dir = os.path.join(self.copy_path or self.move_path, subfolder, rel_path)
                 else:
-                    dest_dir = os.path.join(self.copy_path, subfolder)
+                    dest_dir = os.path.join(self.copy_path or self.move_path, subfolder)
             else:
                 if self.match_folder_structure:
                     rel_path = os.path.relpath(os.path.dirname(image_path), self.search_root)
-                    dest_dir = os.path.join(self.copy_path, rel_path)
+                    if rel_path == '.':
+                        # File is directly in search root, don't add '.' to path
+                        dest_dir = self.copy_path or self.move_path
+                    else:
+                        dest_dir = os.path.join(self.copy_path or self.move_path, rel_path)
                 else:
-                    dest_dir = self.copy_path
+                    dest_dir = self.copy_path or self.move_path
                     
             os.makedirs(dest_dir, exist_ok=True)
-            dest = os.path.join(dest_dir, filename)
-            shutil.copy2(image_path, dest)
-            self.copied_files.append(dest)
+            dest_path = os.path.join(dest_dir, filename)
             
-        if self.move_path:
-            if self.create_or_subfolders:
-                # Create subfolder based on the OR term
-                subfolder = sanitize_folder_name(or_term)
-                if self.match_folder_structure:
-                    rel_path = os.path.relpath(os.path.dirname(image_path), self.search_root)
-                    dest_dir = os.path.join(self.move_path, subfolder, rel_path)
-                else:
-                    dest_dir = os.path.join(self.move_path, subfolder)
-            else:
-                if self.match_folder_structure:
-                    rel_path = os.path.relpath(os.path.dirname(image_path), self.search_root)
-                    dest_dir = os.path.join(self.move_path, rel_path)
-                else:
-                    dest_dir = self.move_path
-                    
-            os.makedirs(dest_dir, exist_ok=True)
-            dest = os.path.join(dest_dir, filename)
-            shutil.move(image_path, dest)
-            self.moved_files.append(dest)
+            if self.copy_path:
+                shutil.copy2(image_path, dest_path)
+                self.copied_files.append(dest_path)
+            if self.move_path:
+                shutil.move(image_path, dest_path)
+                self.moved_files.append(dest_path)
+            
+            # Store the actual destination path after copy/move
+            self.output_paths.append(dest_path)
+        else:
+            # If no copy/move, store the original path
+            self.output_paths.append(image_path)
 
     def log(self, message):
         with self.log_lock:
@@ -410,6 +411,13 @@ class MetadataSearcher:
     def search_images(self, folder_path):
         self.search_root = folder_path
         self.log(self.lang.get_string("messages.searching_in").format(folder_path))
+        
+        # Reset path lists
+        self.found_files = []
+        self.found_paths = []
+        self.output_paths = []
+        self.copied_files = []
+        self.moved_files = []
         
         # Don't proceed if both search term and regex filter are invalid
         if not self.search_term and not self.custom_filter:
@@ -452,9 +460,20 @@ class MetadataSearcher:
             for filename in self.found_files:
                 self.log(filename)
                 
-            self.log("\n" + self.lang.get_string("messages.complete_paths"))
-            for path in self.found_paths:
-                self.log(path)
+            # Show the correct paths - use copied_files or moved_files if we did a copy/move
+            if self.copy_path or self.move_path:
+                self.log("\n" + self.lang.get_string("messages.complete_paths"))
+                if self.copy_path:
+                    for path in self.copied_files:
+                        self.log(path)
+                if self.move_path:
+                    for path in self.moved_files:
+                        self.log(path)
+            else:
+                # No copy or move, show original paths
+                self.log("\n" + self.lang.get_string("messages.complete_paths"))
+                for path in self.found_paths:
+                    self.log(path)
         
         # Output summary
         self.log("\n" + self.lang.get_string("messages.summary"))
