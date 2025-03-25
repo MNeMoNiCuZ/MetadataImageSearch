@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "British",
+        "code": "en-gb"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "Files, Old Chap?:",
+        "search_term": "What's Required?:",
+        "ignore_term": "Rather Not See:",
+        "copy_to": "Pop 'Em Here:",
+        "move_to": "Shift 'Em Here:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "Have a Look",
+        "search": "Jolly Good"
+    },
+    "frames": {
+        "options": "Settings",
+        "progress": "Getting On?"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "Search the Lot",
+            "tooltip": "Look through all folders, rather thoroughly"
+        },
+        "logging": {
+            "text": "Keep Records",
+            "tooltip": "Save the findings to a proper log"
+        },
+        "match_structure": {
+            "text": "Maintain Order",
+            "tooltip": "Keep folders organized as they were"
+        },
+        "or_subfolders": {
+            "text": "Sort Separately",
+            "tooltip": "Separate folders for each OR condition"
+        },
+        "search_positive": {
+            "text": "Check Positive",
+            "tooltip": "Search the positive prompt text"
+        },
+        "search_negative": {
+            "text": "Check Negative",
+            "tooltip": "Search the negative prompt text"
+        },
+        "case_sensitive": {
+            "text": "Case Sensitive",
+            "tooltip": "Mind the case, won't you?"
+        }
+    },
+    "tooltips": {
+        "folder_path": "Select your image folder",
+        "search_term": "Enter terms. && for AND, || for OR, * for wildcards",
+        "ignore_term": "Skip these terms. && for AND, || for OR, * for wildcards",
+        "copy_to": "Copy the good ones here",
+        "move_to": "Move the good ones here",
+        "regex_filter": "Use regex patterns (e.g. (?<!wo)man finds 'man' but not 'woman')"
+    },
+    "progress": {
+        "ready": "Ready",
+        "starting": "Right Then...",
+        "processing": "Working Away",
+        "completed": "All Done!",
+        "counting": "Counting...",
+        "found_files": "Found {0} PNG Files",
+        "search": "On It"
+    },
+    "messages": {
+        "searching_in": "Looking in: {0}",
+        "matching_files": "Found These:",
+        "complete_paths": "Full Paths:",
+        "summary": "Summary:",
+        "total_files": "Total Files: {0}",
+        "matches_found": "Found: {0}",
+        "actions_taken": "Actions: {0}",
+        "logged_files": "All Logged",
+        "copied_files": "Copied {0}",
+        "moved_files": "Moved {0}"
+    },
+    "confirmations": {
+        "move_title": "Rather Sure?",
+        "move_message": "This shall move all files to the new location.\n\nCarry on?"
+    },
+    "warnings": {
+        "multiple_or": "Simplified multiple ORs (|||) to ||",
+        "empty_or": "Removed empty OR terms",
+        "no_terms": "Nothing to search for",
+        "cleaned_term": "Tidied to: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "Oh dear, nothing to search",
+        "search_error": "Terribly sorry: {0}"
+    },
+    "menu": {
+        "language": "Language"
+    }
+} 

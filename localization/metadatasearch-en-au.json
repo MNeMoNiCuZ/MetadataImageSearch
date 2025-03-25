@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "Australian",
+        "code": "en-au"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "Where's Ya Pics?:",
+        "search_term": "Whatcha After?:",
+        "ignore_term": "Skip These, Mate:",
+        "copy_to": "Chuck 'Em Here:",
+        "move_to": "Send 'Em Here:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "Have a Gander",
+        "search": "Let 'Er Rip"
+    },
+    "frames": {
+        "options": "Ya Settings",
+        "progress": "How's It Going?"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "Search the Lot",
+            "tooltip": "Dig through all the folders, mate"
+        },
+        "logging": {
+            "text": "Keep a Record",
+            "tooltip": "Save what we found to a file, yeah?"
+        },
+        "match_structure": {
+            "text": "Keep Folders Tidy",
+            "tooltip": "Keep your folders sorted just like they were"
+        },
+        "or_subfolders": {
+            "text": "Split 'Em Up",
+            "tooltip": "Sort your pics into separate folders for each OR search"
+        },
+        "search_positive": {
+            "text": "Check Positive Prompt",
+            "tooltip": "Look in the positive prompt text"
+        },
+        "search_negative": {
+            "text": "Check Negative Prompt",
+            "tooltip": "Look in the negative prompt text"
+        },
+        "case_sensitive": {
+            "text": "Case Sensitive",
+            "tooltip": "Uppercase and lowercase letters are different, mate"
+        }
+    },
+    "tooltips": {
+        "folder_path": "Pick where your pics are at",
+        "search_term": "Type what you're after. Use && for AND, || for OR, * for wildcards",
+        "ignore_term": "Skip files with these words. Use && for AND, || for OR, * for wildcards",
+        "copy_to": "Where to copy the good ones",
+        "move_to": "Where to move the good ones",
+        "regex_filter": "Use regex to filter results (e.g. (?<!wo)man finds 'man' but not 'woman')"
+    },
+    "progress": {
+        "ready": "Ready to Go",
+        "starting": "Here We Go...",
+        "processing": "Working on It",
+        "completed": "Done and Dusted!",
+        "counting": "Counting Files...",
+        "found_files": "Found {0} PNG Files",
+        "search": "On the Hunt"
+    },
+    "messages": {
+        "searching_in": "Looking in: {0}",
+        "matching_files": "Here's What We Found:",
+        "complete_paths": "Where They're At:",
+        "summary": "The Wrap Up:",
+        "total_files": "Total PNG Files: {0}",
+        "matches_found": "Good Ones: {0}",
+        "actions_taken": "What We Did: {0}",
+        "logged_files": "Wrote It Down",
+        "copied_files": "Copied {0} Files",
+        "moved_files": "Moved {0} Files"
+    },
+    "confirmations": {
+        "move_title": "Sure About That?",
+        "move_message": "This'll move all your pics to the new spot.\n\nFair Dinkum?"
+    },
+    "warnings": {
+        "multiple_or": "Found too many ORs (|||), fixed it to ||",
+        "empty_or": "Cleaned up empty OR bits",
+        "no_terms": "Mate, nothing to search for",
+        "cleaned_term": "Cleaned it up to: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "Strewth! Nothing to search for",
+        "search_error": "Crikey! Error: {0}"
+    },
+    "menu": {
+        "language": "Language"
+    }
+} 

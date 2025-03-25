@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "Klingon",
+        "code": "tlh"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "Hol veS:",
+        "search_term": "Nej beQ:",
+        "ignore_term": "QoH beQ:",
+        "copy_to": "QoD veS:",
+        "move_to": "Dub veS:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "legh",
+        "search": "Nej!"
+    },
+    "frames": {
+        "options": "DuH",
+        "progress": "Qap"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "Nej Hoch",
+            "tooltip": "Nej Hoch veS"
+        },
+        "logging": {
+            "text": "ghItlh choH",
+            "tooltip": "ghItlh Hoch Nej"
+        },
+        "match_structure": {
+            "text": "veS QaD",
+            "tooltip": "veS QaD Dub"
+        },
+        "or_subfolders": {
+            "text": "OR veS chenmoH",
+            "tooltip": "chenmoH veS OR Nej"
+        },
+        "search_positive": {
+            "text": "Prompt QaH",
+            "tooltip": "Nej prompt QaH"
+        },
+        "search_negative": {
+            "text": "Prompt QoH",
+            "tooltip": "Nej prompt QoH"
+        },
+        "case_sensitive": {
+            "text": "Case Sensitive",
+            "tooltip": "Hol QaD"
+        }
+    },
+    "tooltips": {
+        "folder_path": "legh veS naDev",
+        "search_term": "Nej beQ. && for AND, || for OR, * for joH'a'",
+        "ignore_term": "QoH beQ. && for AND, || for OR, * for joH'a'",
+        "copy_to": "QoD Hoch naDev",
+        "move_to": "Dub Hoch naDev",
+        "regex_filter": "Lo' regex (e.g. (?<!wo)man Nej 'man' be' 'woman')"
+    },
+    "progress": {
+        "ready": "YI'el!",
+        "starting": "taH Nej...",
+        "processing": "luSuv...",
+        "completed": "Qapla'!",
+        "counting": "mI' Hoch...",
+        "found_files": "tu'lu' {0} PNG Hol",
+        "search": "nejpu'"
+    },
+    "messages": {
+        "searching_in": "Nej: {0}",
+        "matching_files": "tu'lu' Hol:",
+        "complete_paths": "Hoch veS:",
+        "summary": "Qap:",
+        "total_files": "Hoch PNG: {0}",
+        "matches_found": "tu'lu': {0}",
+        "actions_taken": "vang: {0}",
+        "logged_files": "ghItlh Hol",
+        "copied_files": "QoD {0} Hol",
+        "moved_files": "Dub {0} Hol"
+    },
+    "confirmations": {
+        "move_title": "Dub'a'?",
+        "move_message": "Dub Hoch Hol naDev.\n\nQapla'?"
+    },
+    "warnings": {
+        "multiple_or": "OR Hoch (|||) chenmoH ||",
+        "empty_or": "OR pagh",
+        "no_terms": "pagh Nej",
+        "cleaned_term": "Nej beQ: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "Qagh: pagh Nej",
+        "search_error": "Qagh Nej: {0}"
+    },
+    "menu": {
+        "language": "Hol"
+    }
+} 

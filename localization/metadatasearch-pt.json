@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "Português",
+        "code": "pt"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "Caminho da Pasta:",
+        "search_term": "Termo de Busca:",
+        "ignore_term": "Termo a Ignorar:",
+        "copy_to": "Copiar para:",
+        "move_to": "Mover para:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "Procurar",
+        "search": "Buscar"
+    },
+    "frames": {
+        "options": "Opções",
+        "progress": "Progresso"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "Busca Recursiva",
+            "tooltip": "Buscar em todas as subpastas"
+        },
+        "logging": {
+            "text": "Ativar Registro",
+            "tooltip": "Salvar resultados em arquivos de registro"
+        },
+        "match_structure": {
+            "text": "Manter Estrutura",
+            "tooltip": "Manter a mesma estrutura de pastas na saída"
+        },
+        "or_subfolders": {
+            "text": "Subpastas para OR",
+            "tooltip": "Criar subpastas separadas para cada condição OR"
+        },
+        "search_positive": {
+            "text": "Prompt Positivo",
+            "tooltip": "Buscar no texto do prompt positivo"
+        },
+        "search_negative": {
+            "text": "Prompt Negativo",
+            "tooltip": "Buscar no texto do prompt negativo"
+        },
+        "case_sensitive": {
+            "text": "Diferenciar Maiúsculas",
+            "tooltip": "Diferenciar letras maiúsculas e minúsculas"
+        }
+    },
+    "tooltips": {
+        "folder_path": "Selecione a pasta com imagens para buscar",
+        "search_term": "Digite os termos de busca. Use && para AND, || para OR, * para curinga",
+        "ignore_term": "Excluir arquivos com termos específicos. && para AND, || para OR, * para curinga",
+        "copy_to": "Copiar arquivos encontrados para esta pasta",
+        "move_to": "Mover arquivos encontrados para esta pasta",
+        "regex_filter": "Usar padrão regex para filtrar resultados (ex: (?<!wo)man encontra 'man' mas não 'woman')"
+    },
+    "progress": {
+        "ready": "Pronto",
+        "starting": "Iniciando busca...",
+        "processing": "Processando arquivos",
+        "completed": "Busca concluída!",
+        "counting": "Contando arquivos...",
+        "found_files": "Encontrados {0} arquivos PNG",
+        "search": "Buscando"
+    },
+    "messages": {
+        "searching_in": "Buscando em: {0}",
+        "matching_files": "Arquivos Encontrados:",
+        "complete_paths": "Caminhos Completos:",
+        "summary": "Resumo:",
+        "total_files": "Total de arquivos PNG: {0}",
+        "matches_found": "Arquivos encontrados: {0}",
+        "actions_taken": "Ações realizadas: {0}",
+        "logged_files": "Registrado em arquivos",
+        "copied_files": "Copiados {0} arquivos",
+        "moved_files": "Movidos {0} arquivos"
+    },
+    "confirmations": {
+        "move_title": "Confirmar Movimentação",
+        "move_message": "Isto moverá todos os arquivos encontrados para a pasta especificada.\n\nDeseja continuar?"
+    },
+    "warnings": {
+        "multiple_or": "Múltiplos operadores OR (|||) simplificados para ||",
+        "empty_or": "Termos OR vazios removidos",
+        "no_terms": "Nenhum termo válido após limpeza",
+        "cleaned_term": "Termo de busca limpo para: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "Erro: Nenhum termo válido para processar",
+        "search_error": "Erro durante a busca: {0}"
+    },
+    "menu": {
+        "language": "Idioma"
+    }
+} 

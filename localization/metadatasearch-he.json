@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "עברית",
+        "code": "he"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "נתיב תיקייה:",
+        "search_term": "מונח חיפוש:",
+        "ignore_term": "מונח להתעלמות:",
+        "copy_to": "העתק אל:",
+        "move_to": "העבר אל:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "עיון",
+        "search": "חיפוש"
+    },
+    "frames": {
+        "options": "אפשרויות",
+        "progress": "התקדמות"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "חיפוש רקורסיבי",
+            "tooltip": "חפש בכל תתי התיקיות"
+        },
+        "logging": {
+            "text": "הפעל רישום",
+            "tooltip": "שמור תוצאות חיפוש בקובצי רישום"
+        },
+        "match_structure": {
+            "text": "שמור מבנה תיקיות",
+            "tooltip": "שמור על אותו מבנה תיקיות בפלט"
+        },
+        "or_subfolders": {
+            "text": "תיקיות משנה לכל OR",
+            "tooltip": "צור תיקיות משנה נפרדות לכל תנאי OR"
+        },
+        "search_positive": {
+            "text": "Prompt חיובי",
+            "tooltip": "חפש בטקסט Prompt החיובי"
+        },
+        "search_negative": {
+            "text": "Prompt שלילי",
+            "tooltip": "חפש בטקסט Prompt השלילי"
+        },
+        "case_sensitive": {
+            "text": "תלוי רישיות",
+            "tooltip": "הבחן בין אותיות גדולות וקטנות"
+        }
+    },
+    "tooltips": {
+        "folder_path": "בחר תיקייה המכילה תמונות לחיפוש",
+        "search_term": "הזן מונחי חיפוש. השתמש ב-&& עבור AND, || עבור OR, * עבור תו כללי",
+        "ignore_term": "התעלם מקבצים המכילים מונחים מסוימים. && עבור AND, || עבור OR, * עבור תו כללי",
+        "copy_to": "העתק קבצים תואמים לתיקייה זו",
+        "move_to": "העבר קבצים תואמים לתיקייה זו",
+        "regex_filter": "השתמש בתבנית regex לסינון (לדוגמה: (?<!wo)man מוצא 'man' אך לא 'woman')"
+    },
+    "progress": {
+        "ready": "מוכן",
+        "starting": "מתחיל חיפוש...",
+        "processing": "מעבד קבצים",
+        "completed": "החיפוש הושלם!",
+        "counting": "סופר קבצים...",
+        "found_files": "נמצאו {0} קבצי PNG",
+        "search": "מחפש"
+    },
+    "messages": {
+        "searching_in": "מחפש ב: {0}",
+        "matching_files": "קבצים תואמים:",
+        "complete_paths": "נתיבים מלאים:",
+        "summary": "סיכום:",
+        "total_files": "סך קבצי PNG: {0}",
+        "matches_found": "קבצים תואמים: {0}",
+        "actions_taken": "פעולות שבוצעו: {0}",
+        "logged_files": "נרשם לקבצים",
+        "copied_files": "הועתקו {0} קבצים",
+        "moved_files": "הועברו {0} קבצים"
+    },
+    "confirmations": {
+        "move_title": "אשר העברה",
+        "move_message": "פעולה זו תעביר את כל הקבצים התואמים לתיקייה שצוינה.\n\nהאם להמשיך?"
+    },
+    "warnings": {
+        "multiple_or": "מספר אופרטורי OR (|||) פושטו ל-||",
+        "empty_or": "מונחי OR ריקים הוסרו",
+        "no_terms": "לא נמצאו מונחי חיפוש תקפים לאחר ניקוי",
+        "cleaned_term": "מונח החיפוש נוקה ל: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "שגיאה: אין מונחי חיפוש תקפים",
+        "search_error": "שגיאה במהלך החיפוש: {0}"
+    },
+    "menu": {
+        "language": "שפה"
+    }
+} 

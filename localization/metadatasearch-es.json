@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "Español",
+        "code": "es"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "Ruta de Carpeta:",
+        "search_term": "Término de Búsqueda:",
+        "ignore_term": "Término a Ignorar:",
+        "copy_to": "Copiar a:",
+        "move_to": "Mover a:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "Explorar",
+        "search": "Buscar"
+    },
+    "frames": {
+        "options": "Opciones",
+        "progress": "Progreso"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "Búsqueda Recursiva",
+            "tooltip": "Buscar en todas las subcarpetas"
+        },
+        "logging": {
+            "text": "Activar Registro",
+            "tooltip": "Guardar resultados en archivos de registro"
+        },
+        "match_structure": {
+            "text": "Mantener Estructura",
+            "tooltip": "Mantener la estructura de carpetas al copiar/mover"
+        },
+        "or_subfolders": {
+            "text": "Subcarpetas para OR",
+            "tooltip": "Crear subcarpetas separadas para cada condición OR"
+        },
+        "search_positive": {
+            "text": "Prompt Positivo",
+            "tooltip": "Buscar en el texto del prompt positivo"
+        },
+        "search_negative": {
+            "text": "Prompt Negativo",
+            "tooltip": "Buscar en el texto del prompt negativo"
+        },
+        "case_sensitive": {
+            "text": "Distinguir Mayúsculas",
+            "tooltip": "Distinguir entre mayúsculas y minúsculas"
+        }
+    },
+    "tooltips": {
+        "folder_path": "Seleccionar la carpeta con imágenes",
+        "search_term": "Ingrese términos. Use && para AND, || para OR, * para comodín",
+        "ignore_term": "Excluir archivos con estos términos. && para AND, || para OR, * para comodín",
+        "copy_to": "Copiar archivos encontrados aquí",
+        "move_to": "Mover archivos encontrados aquí",
+        "regex_filter": "Usar patrón regex para filtrar (ej. (?<!wo)man encuentra 'man' pero no 'woman')"
+    },
+    "progress": {
+        "ready": "Listo",
+        "starting": "Iniciando búsqueda...",
+        "processing": "Procesando archivos",
+        "completed": "¡Búsqueda completada!",
+        "counting": "Contando archivos...",
+        "found_files": "Encontrados {0} archivos PNG",
+        "search": "Buscando"
+    },
+    "messages": {
+        "searching_in": "Buscando en: {0}",
+        "matching_files": "Archivos Encontrados:",
+        "complete_paths": "Rutas Completas:",
+        "summary": "Resumen:",
+        "total_files": "Total archivos PNG: {0}",
+        "matches_found": "Coincidencias: {0}",
+        "actions_taken": "Acciones realizadas: {0}",
+        "logged_files": "Guardado en registros",
+        "copied_files": "Copiados {0} archivos",
+        "moved_files": "Movidos {0} archivos"
+    },
+    "confirmations": {
+        "move_title": "Confirmar Mover",
+        "move_message": "Esto moverá todos los archivos encontrados a la carpeta especificada.\n\n¿Desea continuar?"
+    },
+    "warnings": {
+        "multiple_or": "Operadores OR múltiples (|||) simplificados a ||",
+        "empty_or": "Términos OR vacíos eliminados",
+        "no_terms": "No hay términos válidos después de limpiar",
+        "cleaned_term": "Término limpiado a: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "Error: No hay términos válidos",
+        "search_error": "Error durante la búsqueda: {0}"
+    },
+    "menu": {
+        "language": "Idioma"
+    }
+} 

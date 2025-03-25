@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "Italiano",
+        "code": "it"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "Percorso Cartella:",
+        "search_term": "Termine di Ricerca:",
+        "ignore_term": "Termine da Ignorare:",
+        "copy_to": "Copia in:",
+        "move_to": "Sposta in:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "Sfoglia",
+        "search": "Cerca"
+    },
+    "frames": {
+        "options": "Opzioni",
+        "progress": "Avanzamento"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "Ricerca Ricorsiva",
+            "tooltip": "Cerca in tutte le sottocartelle"
+        },
+        "logging": {
+            "text": "Attiva Log",
+            "tooltip": "Salva i risultati nei file di log"
+        },
+        "match_structure": {
+            "text": "Mantieni Struttura",
+            "tooltip": "Mantieni la struttura delle cartelle in output"
+        },
+        "or_subfolders": {
+            "text": "Sottocartelle per OR",
+            "tooltip": "Crea sottocartelle separate per ogni condizione OR"
+        },
+        "search_positive": {
+            "text": "Prompt Positivo",
+            "tooltip": "Cerca nel testo del prompt positivo"
+        },
+        "search_negative": {
+            "text": "Prompt Negativo",
+            "tooltip": "Cerca nel testo del prompt negativo"
+        },
+        "case_sensitive": {
+            "text": "Maiuscole/Minuscole",
+            "tooltip": "Distingui tra maiuscole e minuscole"
+        }
+    },
+    "tooltips": {
+        "folder_path": "Seleziona la cartella con le immagini",
+        "search_term": "Inserisci i termini. Usa && per AND, || per OR, * per jolly",
+        "ignore_term": "Escludi file con questi termini. && per AND, || per OR, * per jolly",
+        "copy_to": "Copia i file trovati qui",
+        "move_to": "Sposta i file trovati qui",
+        "regex_filter": "Usa pattern regex per filtrare (es. (?<!wo)man trova 'man' ma non 'woman')"
+    },
+    "progress": {
+        "ready": "Pronto",
+        "starting": "Avvio ricerca...",
+        "processing": "Elaborazione file",
+        "completed": "Ricerca completata!",
+        "counting": "Conteggio file...",
+        "found_files": "Trovati {0} file PNG",
+        "search": "Ricerca"
+    },
+    "messages": {
+        "searching_in": "Ricerca in: {0}",
+        "matching_files": "File Trovati:",
+        "complete_paths": "Percorsi Completi:",
+        "summary": "Riepilogo:",
+        "total_files": "Totale file PNG: {0}",
+        "matches_found": "File trovati: {0}",
+        "actions_taken": "Azioni eseguite: {0}",
+        "logged_files": "Salvato nei log",
+        "copied_files": "Copiati {0} file",
+        "moved_files": "Spostati {0} file"
+    },
+    "confirmations": {
+        "move_title": "Conferma Spostamento",
+        "move_message": "Questo sposterà tutti i file trovati nella cartella specificata.\n\nProcedere?"
+    },
+    "warnings": {
+        "multiple_or": "Operatori OR multipli (|||) semplificati in ||",
+        "empty_or": "Termini OR vuoti rimossi",
+        "no_terms": "Nessun termine valido dopo la pulizia",
+        "cleaned_term": "Termine pulito in: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "Errore: Nessun termine valido",
+        "search_error": "Errore durante la ricerca: {0}"
+    },
+    "menu": {
+        "language": "Lingua"
+    }
+} 

@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "日本語",
+        "code": "ja"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "フォルダーパス:",
+        "search_term": "検索語:",
+        "ignore_term": "除外語:",
+        "copy_to": "コピー先:",
+        "move_to": "移動先:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "参照",
+        "search": "検索"
+    },
+    "frames": {
+        "options": "オプション",
+        "progress": "進行状況"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "再帰検索",
+            "tooltip": "すべてのサブフォルダーを検索"
+        },
+        "logging": {
+            "text": "ログを有効化",
+            "tooltip": "検索結果をログファイルに保存"
+        },
+        "match_structure": {
+            "text": "フォルダー構造を維持",
+            "tooltip": "出力先でフォルダー構造を保持"
+        },
+        "or_subfolders": {
+            "text": "OR条件ごとにフォルダー作成",
+            "tooltip": "OR条件ごとに別フォルダーを作成"
+        },
+        "search_positive": {
+            "text": "Positive Prompt",
+            "tooltip": "Positive Promptのテキストを検索"
+        },
+        "search_negative": {
+            "text": "Negative Prompt",
+            "tooltip": "Negative Promptのテキストを検索"
+        },
+        "case_sensitive": {
+            "text": "大文字小文字を区別",
+            "tooltip": "大文字と小文字を区別して検索"
+        }
+    },
+    "tooltips": {
+        "folder_path": "検索する画像フォルダーを選択",
+        "search_term": "検索語を入力。&& でAND、|| でOR、* でワイルドカード",
+        "ignore_term": "除外する語を入力。&& でAND、|| でOR、* でワイルドカード",
+        "copy_to": "見つかったファイルをここにコピー",
+        "move_to": "見つかったファイルをここに移動",
+        "regex_filter": "正規表現パターンを使用 (例: (?<!wo)man で'man'は含むが'woman'は除外)"
+    },
+    "progress": {
+        "ready": "準備完了",
+        "starting": "検索開始...",
+        "processing": "処理中",
+        "completed": "検索完了！",
+        "counting": "ファイル数を計算中...",
+        "found_files": "PNGファイル {0} 件を検出",
+        "search": "検索中"
+    },
+    "messages": {
+        "searching_in": "検索場所: {0}",
+        "matching_files": "一致したファイル:",
+        "complete_paths": "完全パス:",
+        "summary": "概要:",
+        "total_files": "PNGファイル総数: {0}",
+        "matches_found": "一致数: {0}",
+        "actions_taken": "実行された操作: {0}",
+        "logged_files": "ログに保存済み",
+        "copied_files": "{0} 件をコピー",
+        "moved_files": "{0} 件を移動"
+    },
+    "confirmations": {
+        "move_title": "移動の確認",
+        "move_message": "一致したファイルを指定フォルダーに移動します。\n\n続行しますか？"
+    },
+    "warnings": {
+        "multiple_or": "複数のOR演算子(|||)を||に簡略化",
+        "empty_or": "空のOR条件を削除",
+        "no_terms": "有効な検索語がありません",
+        "cleaned_term": "検索語を修正: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "エラー: 有効な検索語がありません",
+        "search_error": "検索エラー: {0}"
+    },
+    "menu": {
+        "language": "言語"
+    }
+} 

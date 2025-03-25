@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "Français",
+        "code": "fr"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "Chemin du Dossier:",
+        "search_term": "Terme de Recherche:",
+        "ignore_term": "Terme à Ignorer:",
+        "copy_to": "Copier vers:",
+        "move_to": "Déplacer vers:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "Parcourir",
+        "search": "Rechercher"
+    },
+    "frames": {
+        "options": "Options",
+        "progress": "Progression"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "Recherche Récursive",
+            "tooltip": "Rechercher dans tous les sous-dossiers"
+        },
+        "logging": {
+            "text": "Activer les Logs",
+            "tooltip": "Sauvegarder les résultats dans des fichiers logs"
+        },
+        "match_structure": {
+            "text": "Conserver la Structure",
+            "tooltip": "Maintenir la structure des dossiers lors de la copie/déplacement"
+        },
+        "or_subfolders": {
+            "text": "Sous-dossiers pour OR",
+            "tooltip": "Créer des sous-dossiers séparés pour chaque condition OR"
+        },
+        "search_positive": {
+            "text": "Prompt Positif",
+            "tooltip": "Rechercher dans le texte du prompt positif"
+        },
+        "search_negative": {
+            "text": "Prompt Négatif",
+            "tooltip": "Rechercher dans le texte du prompt négatif"
+        },
+        "case_sensitive": {
+            "text": "Sensible à la Casse",
+            "tooltip": "Distinguer majuscules et minuscules"
+        }
+    },
+    "tooltips": {
+        "folder_path": "Sélectionner le dossier contenant les images",
+        "search_term": "Entrez les termes. Utilisez && pour AND, || pour OR, * pour joker",
+        "ignore_term": "Exclure les fichiers avec ces termes. && pour AND, || pour OR, * pour joker",
+        "copy_to": "Copier les fichiers trouvés ici",
+        "move_to": "Déplacer les fichiers trouvés ici",
+        "regex_filter": "Utiliser un motif regex pour filtrer (ex. (?<!wo)man trouve 'man' mais pas 'woman')"
+    },
+    "progress": {
+        "ready": "Prêt",
+        "starting": "Démarrage recherche...",
+        "processing": "Traitement fichiers",
+        "completed": "Recherche terminée !",
+        "counting": "Comptage fichiers...",
+        "found_files": "Trouvé {0} fichiers PNG",
+        "search": "Recherche"
+    },
+    "messages": {
+        "searching_in": "Recherche dans : {0}",
+        "matching_files": "Fichiers Trouvés :",
+        "complete_paths": "Chemins Complets :",
+        "summary": "Résumé :",
+        "total_files": "Total fichiers PNG : {0}",
+        "matches_found": "Correspondances : {0}",
+        "actions_taken": "Actions effectuées : {0}",
+        "logged_files": "Enregistré dans les logs",
+        "copied_files": "Copié {0} fichiers",
+        "moved_files": "Déplacé {0} fichiers"
+    },
+    "confirmations": {
+        "move_title": "Confirmer Déplacement",
+        "move_message": "Ceci déplacera tous les fichiers trouvés vers le dossier spécifié.\n\nVoulez-vous continuer ?"
+    },
+    "warnings": {
+        "multiple_or": "Opérateurs OR multiples (|||) simplifiés en ||",
+        "empty_or": "Termes OR vides supprimés",
+        "no_terms": "Aucun terme valide après nettoyage",
+        "cleaned_term": "Terme nettoyé en : {0}"
+    },
+    "errors": {
+        "no_valid_terms": "Erreur : Aucun terme valide",
+        "search_error": "Erreur pendant la recherche : {0}"
+    },
+    "menu": {
+        "language": "Langue"
+    }
+} 

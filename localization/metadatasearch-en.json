@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "English",
+        "code": "en"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "Folder Path:",
+        "search_term": "Search Term:",
+        "ignore_term": "Ignore Term:",
+        "copy_to": "Copy to:",
+        "move_to": "Move to:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "Browse",
+        "search": "Search"
+    },
+    "frames": {
+        "options": "Options",
+        "progress": "Progress"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "Recursive Search",
+            "tooltip": "Search in all subfolders of the selected directory"
+        },
+        "logging": {
+            "text": "Enable Logging",
+            "tooltip": "Save search results and operations to log files"
+        },
+        "match_structure": {
+            "text": "Match Output Folder Structure",
+            "tooltip": "Maintain the same folder structure in output directories as in the source"
+        },
+        "or_subfolders": {
+            "text": "Create Subfolder for each OR",
+            "tooltip": "Create separate subfolders for each OR condition in the search term. Example: If searching for 'blue eyes || green eyes', matching files will be sorted into 'blue eyes' and 'green eyes' subfolders"
+        },
+        "search_positive": {
+            "text": "Search Positive Prompt",
+            "tooltip": "Search within the positive prompt text of the image metadata"
+        },
+        "search_negative": {
+            "text": "Search Negative Prompt",
+            "tooltip": "Search within the negative prompt text of the image metadata"
+        },
+        "case_sensitive": {
+            "text": "Case Sensitive",
+            "tooltip": "Make the search case-sensitive (e.g. 'Cat' won't match 'cat')"
+        }
+    },
+    "tooltips": {
+        "folder_path": "Select the folder containing images to search",
+        "search_term": "Enter search terms. Use && for AND, || for OR, * for wildcard",
+        "ignore_term": "Exclude files containing specific terms. Use && for AND, || for OR, * for wildcard",
+        "copy_to": "Copy matching files to this folder",
+        "move_to": "Move matching files to this folder",
+        "regex_filter": "Use regular expression pattern to filter results (e.g. (?<!wo)man matches 'man' but not 'woman')."
+    },
+    "progress": {
+        "ready": "Ready",
+        "starting": "Starting search...",
+        "processing": "Processing files",
+        "completed": "Search completed!",
+        "counting": "Counting files...",
+        "found_files": "Found {0} PNG files to process",
+        "search": "Searching"
+    },
+    "messages": {
+        "searching_in": "Searching in: {0}",
+        "matching_files": "Matching Files:",
+        "complete_paths": "Complete Paths:",
+        "summary": "Summary:",
+        "total_files": "Total PNG files found: {0}",
+        "matches_found": "Matching files: {0}",
+        "actions_taken": "Actions taken: {0}",
+        "logged_files": "Logged to files",
+        "copied_files": "Copied {0} files",
+        "moved_files": "Moved {0} files"
+    },
+    "confirmations": {
+        "move_title": "Confirm Move",
+        "move_message": "This will move all matching files from their original locations to the specified folder.\n\nAre you sure you want to proceed?"
+    },
+    "warnings": {
+        "multiple_or": "Multiple consecutive OR operators (|||) were simplified to single OR (||)",
+        "empty_or": "Empty OR terms were removed from search",
+        "no_terms": "No valid search terms found after cleaning",
+        "cleaned_term": "Search term was cleaned to: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "Error: No valid search terms to process",
+        "search_error": "Error during search: {0}"
+    },
+    "menu": {
+        "language": "Language"
+    }
+} 

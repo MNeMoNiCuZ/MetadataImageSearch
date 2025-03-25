@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "中文",
+        "code": "zh"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "文件夹路径:",
+        "search_term": "搜索词:",
+        "ignore_term": "排除词:",
+        "copy_to": "复制到:",
+        "move_to": "移动到:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "浏览",
+        "search": "搜索"
+    },
+    "frames": {
+        "options": "选项",
+        "progress": "进度"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "递归搜索",
+            "tooltip": "搜索所有子文件夹"
+        },
+        "logging": {
+            "text": "启用日志",
+            "tooltip": "将搜索结果保存到日志文件"
+        },
+        "match_structure": {
+            "text": "保持文件夹结构",
+            "tooltip": "在输出目录中保持相同的文件夹结构"
+        },
+        "or_subfolders": {
+            "text": "为OR条件创建子文件夹",
+            "tooltip": "为每个OR条件创建单独的子文件夹"
+        },
+        "search_positive": {
+            "text": "Positive Prompt",
+            "tooltip": "搜索Positive Prompt文本"
+        },
+        "search_negative": {
+            "text": "Negative Prompt",
+            "tooltip": "搜索Negative Prompt文本"
+        },
+        "case_sensitive": {
+            "text": "区分大小写",
+            "tooltip": "区分大小写进行搜索"
+        }
+    },
+    "tooltips": {
+        "folder_path": "选择要搜索的图片文件夹",
+        "search_term": "输入搜索词。使用 && 表示AND，|| 表示OR，* 表示通配符",
+        "ignore_term": "输入要排除的词。使用 && 表示AND，|| 表示OR，* 表示通配符",
+        "copy_to": "将匹配的文件复制到此文件夹",
+        "move_to": "将匹配的文件移动到此文件夹",
+        "regex_filter": "使用正则表达式过滤结果 (例如: (?<!wo)man 匹配'man'但不匹配'woman')"
+    },
+    "progress": {
+        "ready": "就绪",
+        "starting": "开始搜索...",
+        "processing": "处理文件中",
+        "completed": "搜索完成！",
+        "counting": "计算文件数...",
+        "found_files": "找到 {0} 个PNG文件",
+        "search": "搜索中"
+    },
+    "messages": {
+        "searching_in": "搜索位置: {0}",
+        "matching_files": "匹配的文件:",
+        "complete_paths": "完整路径:",
+        "summary": "摘要:",
+        "total_files": "找到的PNG文件总数: {0}",
+        "matches_found": "匹配文件数: {0}",
+        "actions_taken": "执行的操作: {0}",
+        "logged_files": "已记录到日志",
+        "copied_files": "已复制 {0} 个文件",
+        "moved_files": "已移动 {0} 个文件"
+    },
+    "confirmations": {
+        "move_title": "确认移动",
+        "move_message": "这将把所有匹配的文件移动到指定文件夹。\n\n是否继续？"
+    },
+    "warnings": {
+        "multiple_or": "多个连续的OR运算符(|||)已简化为单个OR(||)",
+        "empty_or": "已移除空的OR条件",
+        "no_terms": "清理后没有有效的搜索词",
+        "cleaned_term": "搜索词已清理为: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "错误: 没有有效的搜索词",
+        "search_error": "搜索出错: {0}"
+    },
+    "menu": {
+        "language": "语言"
+    }
+} 

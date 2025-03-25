@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "한국어",
+        "code": "ko"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "폴더 경로:",
+        "search_term": "검색어:",
+        "ignore_term": "제외어:",
+        "copy_to": "복사할 위치:",
+        "move_to": "이동할 위치:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "찾아보기",
+        "search": "검색"
+    },
+    "frames": {
+        "options": "옵션",
+        "progress": "진행 상황"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "하위 폴더 검색",
+            "tooltip": "모든 하위 폴더에서 검색"
+        },
+        "logging": {
+            "text": "로그 활성화",
+            "tooltip": "검색 결과를 로그 파일에 저장"
+        },
+        "match_structure": {
+            "text": "폴더 구조 유지",
+            "tooltip": "출력 폴더에서 원본과 동일한 구조 유지"
+        },
+        "or_subfolders": {
+            "text": "OR 조건별 폴더",
+            "tooltip": "OR 조건마다 별도의 하위 폴더 생성"
+        },
+        "search_positive": {
+            "text": "Positive Prompt",
+            "tooltip": "Positive Prompt 텍스트 검색"
+        },
+        "search_negative": {
+            "text": "Negative Prompt",
+            "tooltip": "Negative Prompt 텍스트 검색"
+        },
+        "case_sensitive": {
+            "text": "대소문자 구분",
+            "tooltip": "대소문자를 구분하여 검색"
+        }
+    },
+    "tooltips": {
+        "folder_path": "검색할 이미지 폴더 선택",
+        "search_term": "검색어 입력. && 는 AND, || 는 OR, * 는 와일드카드",
+        "ignore_term": "제외할 파일 지정. && 는 AND, || 는 OR, * 는 와일드카드",
+        "copy_to": "일치하는 파일을 이 폴더에 복사",
+        "move_to": "일치하는 파일을 이 폴더로 이동",
+        "regex_filter": "정규식 패턴으로 필터링 (예: (?<!wo)man 은 'man'은 포함하고 'woman'은 제외)"
+    },
+    "progress": {
+        "ready": "준비 완료",
+        "starting": "검색 시작...",
+        "processing": "파일 처리 중",
+        "completed": "검색 완료!",
+        "counting": "파일 수 계산 중...",
+        "found_files": "PNG 파일 {0}개 발견",
+        "search": "검색 중"
+    },
+    "messages": {
+        "searching_in": "검색 위치: {0}",
+        "matching_files": "일치하는 파일:",
+        "complete_paths": "전체 경로:",
+        "summary": "요약:",
+        "total_files": "전체 PNG 파일: {0}개",
+        "matches_found": "일치 항목: {0}개",
+        "actions_taken": "수행된 작업: {0}",
+        "logged_files": "로그 파일에 기록됨",
+        "copied_files": "{0}개 파일 복사됨",
+        "moved_files": "{0}개 파일 이동됨"
+    },
+    "confirmations": {
+        "move_title": "이동 확인",
+        "move_message": "일치하는 모든 파일을 지정된 폴더로 이동합니다.\n\n계속하시겠습니까?"
+    },
+    "warnings": {
+        "multiple_or": "연속된 OR 연산자(|||)가 ||로 단순화됨",
+        "empty_or": "빈 OR 조건이 제거됨",
+        "no_terms": "정리 후 유효한 검색어가 없음",
+        "cleaned_term": "검색어가 다음으로 정리됨: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "오류: 유효한 검색어가 없습니다",
+        "search_error": "검색 중 오류 발생: {0}"
+    },
+    "menu": {
+        "language": "언어"
+    }
+} 

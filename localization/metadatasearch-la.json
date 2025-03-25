@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "Latina",
+        "code": "la"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "Via Thecae:",
+        "search_term": "Quaerendum:",
+        "ignore_term": "Neglegendum:",
+        "copy_to": "Transcribe ad:",
+        "move_to": "Transfer ad:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "Explora",
+        "search": "Quaere"
+    },
+    "frames": {
+        "options": "Optiones",
+        "progress": "Progressus"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "Quaere Omnia",
+            "tooltip": "Quaere in omnibus thecis"
+        },
+        "logging": {
+            "text": "Scribe Acta",
+            "tooltip": "Serva eventus in actis"
+        },
+        "match_structure": {
+            "text": "Serva Ordinem",
+            "tooltip": "Serva ordinem thecarum"
+        },
+        "or_subfolders": {
+            "text": "Thecae pro OR",
+            "tooltip": "Crea thecas pro singulis OR"
+        },
+        "search_positive": {
+            "text": "Prompt Positivum",
+            "tooltip": "Quaere in texto prompt positivo"
+        },
+        "search_negative": {
+            "text": "Prompt Negativum",
+            "tooltip": "Quaere in texto prompt negativo"
+        },
+        "case_sensitive": {
+            "text": "Litterae Exactae",
+            "tooltip": "Distingue inter maiusculas et minusculas"
+        }
+    },
+    "tooltips": {
+        "folder_path": "Elige thecam imaginum",
+        "search_term": "Scribe quaerenda. && pro AND, || pro OR, * pro quolibet",
+        "ignore_term": "Exclude documenta. && pro AND, || pro OR, * pro quolibet",
+        "copy_to": "Transcribe documenta huc",
+        "move_to": "Transfer documenta huc",
+        "regex_filter": "Uti regex ad filtrandum (e.g. (?<!wo)man invenit 'man' non 'woman')"
+    },
+    "progress": {
+        "ready": "Paratus",
+        "starting": "Incipit quaerere...",
+        "processing": "Tractat documenta",
+        "completed": "Quaestio completa!",
+        "counting": "Numerat documenta...",
+        "found_files": "Inventa {0} documenta PNG",
+        "search": "Quaerit"
+    },
+    "messages": {
+        "searching_in": "Quaerit in: {0}",
+        "matching_files": "Documenta Inventa:",
+        "complete_paths": "Viae Completae:",
+        "summary": "Summarium:",
+        "total_files": "Summa documentorum PNG: {0}",
+        "matches_found": "Inventa: {0}",
+        "actions_taken": "Actiones: {0}",
+        "logged_files": "Scripta in actis",
+        "copied_files": "Transcripta {0}",
+        "moved_files": "Translata {0}"
+    },
+    "confirmations": {
+        "move_title": "Confirma Translationem",
+        "move_message": "Hoc transferet omnia documenta inventa in thecam electam.\n\nProcedere vis?"
+    },
+    "warnings": {
+        "multiple_or": "Plures OR (|||) simplificati ad ||",
+        "empty_or": "OR vacui remoti",
+        "no_terms": "Nulla quaerenda valida",
+        "cleaned_term": "Mundatum ad: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "Error: Nulla quaerenda valida",
+        "search_error": "Error in quaerendo: {0}"
+    },
+    "menu": {
+        "language": "Lingua"
+    }
+} 

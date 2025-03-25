@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "العربية",
+        "code": "ar"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "مسار المجلد:",
+        "search_term": "كلمة البحث:",
+        "ignore_term": "كلمة التجاهل:",
+        "copy_to": "نسخ إلى:",
+        "move_to": "نقل إلى:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "تصفح",
+        "search": "بحث"
+    },
+    "frames": {
+        "options": "خيارات",
+        "progress": "التقدم"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "بحث متكرر",
+            "tooltip": "البحث في جميع المجلدات الفرعية"
+        },
+        "logging": {
+            "text": "تفعيل السجل",
+            "tooltip": "حفظ نتائج البحث في ملفات السجل"
+        },
+        "match_structure": {
+            "text": "مطابقة هيكل المجلد",
+            "tooltip": "الحفاظ على نفس هيكل المجلدات في المخرجات"
+        },
+        "or_subfolders": {
+            "text": "مجلد فرعي لكل OR",
+            "tooltip": "إنشاء مجلدات فرعية منفصلة لكل شرط OR"
+        },
+        "search_positive": {
+            "text": "Prompt إيجابي",
+            "tooltip": "البحث في نص Prompt الإيجابي"
+        },
+        "search_negative": {
+            "text": "Prompt سلبي",
+            "tooltip": "البحث في نص Prompt السلبي"
+        },
+        "case_sensitive": {
+            "text": "حساس لحالة الأحرف",
+            "tooltip": "التمييز بين الأحرف الكبيرة والصغيرة"
+        }
+    },
+    "tooltips": {
+        "folder_path": "اختر المجلد الذي يحتوي على الصور",
+        "search_term": "أدخل كلمات البحث. استخدم && للـ AND، || للـ OR، * للبحث المتعدد",
+        "ignore_term": "استبعاد الملفات التي تحتوي على كلمات معينة. && للـ AND، || للـ OR، * للبحث المتعدد",
+        "copy_to": "نسخ الملفات المطابقة إلى هذا المجلد",
+        "move_to": "نقل الملفات المطابقة إلى هذا المجلد",
+        "regex_filter": "استخدم نمط regex للتصفية (مثال: (?<!wo)man يطابق 'man' وليس 'woman')"
+    },
+    "progress": {
+        "ready": "جاهز",
+        "starting": "بدء البحث...",
+        "processing": "معالجة الملفات",
+        "completed": "اكتمل البحث!",
+        "counting": "عد الملفات...",
+        "found_files": "تم العثور على {0} ملف PNG",
+        "search": "جاري البحث"
+    },
+    "messages": {
+        "searching_in": "البحث في: {0}",
+        "matching_files": "الملفات المطابقة:",
+        "complete_paths": "المسارات الكاملة:",
+        "summary": "الملخص:",
+        "total_files": "إجمالي ملفات PNG: {0}",
+        "matches_found": "الملفات المطابقة: {0}",
+        "actions_taken": "الإجراءات المتخذة: {0}",
+        "logged_files": "تم التسجيل في الملفات",
+        "copied_files": "تم نسخ {0} ملف",
+        "moved_files": "تم نقل {0} ملف"
+    },
+    "confirmations": {
+        "move_title": "تأكيد النقل",
+        "move_message": "سيتم نقل جميع الملفات المطابقة إلى المجلد المحدد.\n\nهل تريد المتابعة؟"
+    },
+    "warnings": {
+        "multiple_or": "تم تبسيط عوامل OR المتعددة (|||) إلى ||",
+        "empty_or": "تمت إزالة شروط OR الفارغة",
+        "no_terms": "لا توجد كلمات بحث صالحة بعد التنظيف",
+        "cleaned_term": "تم تنظيف كلمة البحث إلى: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "خطأ: لا توجد كلمات بحث صالحة",
+        "search_error": "خطأ أثناء البحث: {0}"
+    },
+    "menu": {
+        "language": "اللغة"
+    }
+} 

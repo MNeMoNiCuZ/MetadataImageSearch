@@ -1,0 +1,101 @@
+{
+    "language": {
+        "name": "Svenska",
+        "code": "sv"
+    },
+    "window": {
+        "title": "Metadata Image Search"
+    },
+    "labels": {
+        "folder_path": "Mappens Sökväg:",
+        "search_term": "Sökterm:",
+        "ignore_term": "Ignorera Term:",
+        "copy_to": "Kopiera till:",
+        "move_to": "Flytta till:",
+        "regex": "Regex:"
+    },
+    "buttons": {
+        "browse": "Bläddra",
+        "search": "Sök"
+    },
+    "frames": {
+        "options": "Alternativ",
+        "progress": "Förlopp"
+    },
+    "checkboxes": {
+        "recursive": {
+            "text": "Rekursiv Sökning",
+            "tooltip": "Sök i alla undermappar"
+        },
+        "logging": {
+            "text": "Aktivera Loggning",
+            "tooltip": "Spara sökresultat i loggfiler"
+        },
+        "match_structure": {
+            "text": "Behåll Mappstruktur",
+            "tooltip": "Behåll samma mappstruktur i utdata"
+        },
+        "or_subfolders": {
+            "text": "Undermappar för OR",
+            "tooltip": "Skapa separata undermappar för varje OR-villkor"
+        },
+        "search_positive": {
+            "text": "Prompt Positiv",
+            "tooltip": "Sök i positiv prompt-text"
+        },
+        "search_negative": {
+            "text": "Prompt Negativ",
+            "tooltip": "Sök i negativ prompt-text"
+        },
+        "case_sensitive": {
+            "text": "Skiftlägeskänslig",
+            "tooltip": "Skilj på stora och små bokstäver"
+        }
+    },
+    "tooltips": {
+        "folder_path": "Välj mapp med bilder att söka i",
+        "search_term": "Ange söktermer. Använd && för AND, || för OR, * för jokertecken",
+        "ignore_term": "Uteslut filer med dessa termer. && för AND, || för OR, * för jokertecken",
+        "copy_to": "Kopiera matchande filer hit",
+        "move_to": "Flytta matchande filer hit",
+        "regex_filter": "Använd regex-mönster för filtrering (t.ex. (?<!wo)man matchar 'man' men inte 'woman')"
+    },
+    "progress": {
+        "ready": "Redo",
+        "starting": "Startar sökning...",
+        "processing": "Bearbetar filer",
+        "completed": "Sökning klar!",
+        "counting": "Räknar filer...",
+        "found_files": "Hittade {0} PNG-filer",
+        "search": "Söker"
+    },
+    "messages": {
+        "searching_in": "Söker i: {0}",
+        "matching_files": "Matchande Filer:",
+        "complete_paths": "Fullständiga Sökvägar:",
+        "summary": "Sammanfattning:",
+        "total_files": "Totalt antal PNG-filer: {0}",
+        "matches_found": "Matchande filer: {0}",
+        "actions_taken": "Utförda åtgärder: {0}",
+        "logged_files": "Loggat till filer",
+        "copied_files": "Kopierade {0} filer",
+        "moved_files": "Flyttade {0} filer"
+    },
+    "confirmations": {
+        "move_title": "Bekräfta Flytt",
+        "move_message": "Detta kommer att flytta alla matchande filer till den angivna mappen.\n\nVill du fortsätta?"
+    },
+    "warnings": {
+        "multiple_or": "Flera OR-operatorer (|||) förenklades till ||",
+        "empty_or": "Tomma OR-termer togs bort",
+        "no_terms": "Inga giltiga söktermer efter rensning",
+        "cleaned_term": "Sökterm rensades till: {0}"
+    },
+    "errors": {
+        "no_valid_terms": "Fel: Inga giltiga söktermer",
+        "search_error": "Fel vid sökning: {0}"
+    },
+    "menu": {
+        "language": "Språk"
+    }
+} 
