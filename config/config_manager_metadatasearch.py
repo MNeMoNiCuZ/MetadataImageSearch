@@ -6,7 +6,7 @@ from typing import Any, Dict, Optional
 class ConfigManagerMetadataSearch:
     def __init__(self):
         self.config = configparser.ConfigParser()
-        self.config_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'config/config-metadatasearch.ini')
+        self.config_file = os.path.join(os.path.dirname(__file__), 'config-metadatasearch.ini')
         
         # Create default sections if they don't exist
         if not os.path.exists(self.config_file):
