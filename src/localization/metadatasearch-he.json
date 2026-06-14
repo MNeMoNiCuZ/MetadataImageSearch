@@ -12,11 +12,13 @@
         "ignore_term": "מונח להתעלמות:",
         "copy_to": "העתק אל:",
         "move_to": "העבר אל:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "שפה:"
     },
     "buttons": {
         "browse": "עיון",
-        "search": "חיפוש"
+        "search": "חיפוש",
+        "view_images": "הצג תמונות"
     },
     "frames": {
         "options": "אפשרויות",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "תלוי רישיות",
             "tooltip": "הבחן בין אותיות גדולות וקטנות"
+        },
+        "dark_mode": {
+            "text": "מצב כהה",
+            "tooltip": "עבור בין ערכת נושא כהה לבהירה"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "שפה"
+    },
+    "image_browser": {
+        "scale_label": "קנה מידה:",
+        "loading": "טוען {0} תמונות...",
+        "status": "{0} תמונות",
+        "status_one": "{0} תמונה",
+        "status_selected": " | {0} נבחרו",
+        "confirm_delete_title": "אישור מחיקה",
+        "confirm_delete_one": "למחוק תמונה זו לצמיתות?\n\nלא ניתן לבטל פעולה זו.",
+        "confirm_delete_many": "למחוק {0} תמונות לצמיתות?\n\nלא ניתן לבטל פעולה זו.",
+        "delete_error_title": "שגיאת מחיקה",
+        "delete_error_message": "לא ניתן למחוק:\n{0}\n\n{1}",
+        "menu_open_preview": "פתח תמונה (תצוגה מקדימה)",
+        "menu_open_default": "פתח עם אפליקציה ברירת מחדל",
+        "menu_open_folder": "פתח תיקייה מכילה",
+        "menu_copy_path": "העתק נתיב",
+        "menu_preview_n": "תצוגה מקדימה של {0} תמונות",
+        "menu_copy_paths": "העתק את כל הנתיבים",
+        "menu_copy_files": "העתק קבצים",
+        "menu_delete_one": "מחק תמונה",
+        "menu_delete_many": "מחק {0} תמונות"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "התאם לחלון",
+        "menu_actual_size": "1:1 (גודל מקורי)",
+        "hint": "כפתור שמאל/אמצע: גרור  •  גלגל/ימין: הגדל",
+        "error_loading": "שגיאה בטעינת תמונה:\n{0}"
     }
-} 
+}

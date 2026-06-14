@@ -12,11 +12,13 @@
         "ignore_term": "除外語:",
         "copy_to": "コピー先:",
         "move_to": "移動先:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "言語:"
     },
     "buttons": {
         "browse": "参照",
-        "search": "検索"
+        "search": "検索",
+        "view_images": "画像を表示"
     },
     "frames": {
         "options": "オプション",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "大文字小文字を区別",
             "tooltip": "大文字と小文字を区別して検索"
+        },
+        "dark_mode": {
+            "text": "ダークモード",
+            "tooltip": "ダークテーマとライトテーマを切り替え"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "言語"
+    },
+    "image_browser": {
+        "scale_label": "スケール:",
+        "loading": "{0}枚の画像を読み込み中...",
+        "status": "{0}枚の画像",
+        "status_one": "{0}枚の画像",
+        "status_selected": " | {0}枚選択中",
+        "confirm_delete_title": "削除の確認",
+        "confirm_delete_one": "この画像を完全に削除しますか?\n\nこの操作は取り消せません。",
+        "confirm_delete_many": "{0}枚の画像を完全に削除しますか?\n\nこの操作は取り消せません。",
+        "delete_error_title": "削除エラー",
+        "delete_error_message": "削除できません:\n{0}\n\n{1}",
+        "menu_open_preview": "画像を開く（プレビュー）",
+        "menu_open_default": "既定のアプリで開く",
+        "menu_open_folder": "含むフォルダを開く",
+        "menu_copy_path": "パスをコピー",
+        "menu_preview_n": "{0}枚の画像をプレビュー",
+        "menu_copy_paths": "全パスをコピー",
+        "menu_copy_files": "ファイルをコピー",
+        "menu_delete_one": "画像を削除",
+        "menu_delete_many": "{0}枚の画像を削除"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "ウィンドウに合わせる",
+        "menu_actual_size": "1:1（実際のサイズ）",
+        "hint": "左/中クリック: パン  •  スクロール/右ドラッグ: ズーム",
+        "error_loading": "画像の読み込みエラー:\n{0}"
     }
-} 
+}

@@ -12,11 +12,13 @@
         "ignore_term": "Ignorieren:",
         "copy_to": "Kopieren nach:",
         "move_to": "Verschieben nach:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "Sprache:"
     },
     "buttons": {
         "browse": "Durchsuchen",
-        "search": "Suchen"
+        "search": "Suchen",
+        "view_images": "Bilder anzeigen"
     },
     "frames": {
         "options": "Optionen",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "Groß-/Kleinschreibung",
             "tooltip": "Beachte Groß- und Kleinschreibung"
+        },
+        "dark_mode": {
+            "text": "Dunkelmodus",
+            "tooltip": "Zwischen dunklem und hellem Theme wechseln"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "Sprache"
+    },
+    "image_browser": {
+        "scale_label": "Skalierung:",
+        "loading": "Lade {0} Bilder...",
+        "status": "{0} Bilder",
+        "status_one": "{0} Bild",
+        "status_selected": " | {0} ausgewählt",
+        "confirm_delete_title": "Löschen bestätigen",
+        "confirm_delete_one": "Dieses Bild dauerhaft löschen?\n\nDies kann nicht rückgängig gemacht werden.",
+        "confirm_delete_many": "{0} Bilder dauerhaft löschen?\n\nDies kann nicht rückgängig gemacht werden.",
+        "delete_error_title": "Löschfehler",
+        "delete_error_message": "Konnte nicht gelöscht werden:\n{0}\n\n{1}",
+        "menu_open_preview": "Bild öffnen (Vorschau)",
+        "menu_open_default": "Mit Standardprogramm öffnen",
+        "menu_open_folder": "Enthaltenden Ordner öffnen",
+        "menu_copy_path": "Pfad kopieren",
+        "menu_preview_n": "{0} Bilder in Vorschau",
+        "menu_copy_paths": "Alle Pfade kopieren",
+        "menu_copy_files": "Dateien kopieren",
+        "menu_delete_one": "Bild löschen",
+        "menu_delete_many": "{0} Bilder löschen"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "An Fenster anpassen",
+        "menu_actual_size": "1:1 (Originalgröße)",
+        "hint": "LMB / MMB: Schwenken  •  Scrollen / RMB-Ziehen: Zoom",
+        "error_loading": "Fehler beim Laden des Bildes:\n{0}"
     }
-} 
+}

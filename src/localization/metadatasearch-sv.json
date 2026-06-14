@@ -12,11 +12,13 @@
         "ignore_term": "Ignorera Term:",
         "copy_to": "Kopiera till:",
         "move_to": "Flytta till:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "Språk:"
     },
     "buttons": {
         "browse": "Bläddra",
-        "search": "Sök"
+        "search": "Sök",
+        "view_images": "Visa bilder"
     },
     "frames": {
         "options": "Alternativ",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "Skiftlägeskänslig",
             "tooltip": "Skilj på stora och små bokstäver"
+        },
+        "dark_mode": {
+            "text": "Mörkt Läge",
+            "tooltip": "Växla mellan mörkt och ljust tema"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "Språk"
+    },
+    "image_browser": {
+        "scale_label": "Skala:",
+        "loading": "Laddar {0} bilder...",
+        "status": "{0} bilder",
+        "status_one": "{0} bild",
+        "status_selected": " | {0} valda",
+        "confirm_delete_title": "Bekräfta borttagning",
+        "confirm_delete_one": "Ta bort bilden permanent?\n\nDetta kan inte ångras.",
+        "confirm_delete_many": "Ta bort {0} bilder permanent?\n\nDetta kan inte ångras.",
+        "delete_error_title": "Borttagningsfel",
+        "delete_error_message": "Kunde inte ta bort:\n{0}\n\n{1}",
+        "menu_open_preview": "Öppna bild (Förhandsvisning)",
+        "menu_open_default": "Öppna med standardapp",
+        "menu_open_folder": "Öppna mapp",
+        "menu_copy_path": "Kopiera sökväg",
+        "menu_preview_n": "Förhandsvisning av {0} bilder",
+        "menu_copy_paths": "Kopiera alla sökvägar",
+        "menu_copy_files": "Kopiera filer",
+        "menu_delete_one": "Ta bort bild",
+        "menu_delete_many": "Ta bort {0} bilder"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "Anpassa till fönster",
+        "menu_actual_size": "1:1 (Originalstorlek)",
+        "hint": "VK / MK: Panorera  •  Rulla / HK-dra: Zoom",
+        "error_loading": "Fel vid laddning av bild:\n{0}"
     }
-} 
+}

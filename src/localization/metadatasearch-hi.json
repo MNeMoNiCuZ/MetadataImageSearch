@@ -12,11 +12,13 @@
         "ignore_term": "अनदेखा शब्द:",
         "copy_to": "यहाँ कॉपी करें:",
         "move_to": "यहाँ ले जाएं:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "भाषा:"
     },
     "buttons": {
         "browse": "ब्राउज़",
-        "search": "खोजें"
+        "search": "खोजें",
+        "view_images": "छवियाँ देखें"
     },
     "frames": {
         "options": "विकल्प",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "केस संवेदी",
             "tooltip": "बड़े और छोटे अक्षरों में अंतर करें"
+        },
+        "dark_mode": {
+            "text": "डार्क मोड",
+            "tooltip": "डार्क और लाइट थीम के बीच स्विच करें"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "भाषा"
+    },
+    "image_browser": {
+        "scale_label": "स्केल:",
+        "loading": "{0} चित्र लोड हो रहे हैं...",
+        "status": "{0} चित्र",
+        "status_one": "{0} चित्र",
+        "status_selected": " | {0} चयनित",
+        "confirm_delete_title": "हटाने की पुष्टि",
+        "confirm_delete_one": "इस चित्र को स्थायी रूप से हटाएं?\n\nयह पूर्ववत नहीं किया जा सकता।",
+        "confirm_delete_many": "{0} चित्रों को स्थायी रूप से हटाएं?\n\nयह पूर्ववत नहीं किया जा सकता।",
+        "delete_error_title": "हटाने में त्रुटि",
+        "delete_error_message": "हटाया नहीं जा सका:\n{0}\n\n{1}",
+        "menu_open_preview": "चित्र खोलें (पूर्वावलोकन)",
+        "menu_open_default": "डिफ़ॉल्ट ऐप से खोलें",
+        "menu_open_folder": "फ़ोल्डर खोलें",
+        "menu_copy_path": "पथ कॉपी करें",
+        "menu_preview_n": "{0} चित्रों का पूर्वावलोकन",
+        "menu_copy_paths": "सभी पथ कॉपी करें",
+        "menu_copy_files": "फ़ाइलें कॉपी करें",
+        "menu_delete_one": "चित्र हटाएं",
+        "menu_delete_many": "{0} चित्र हटाएं"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "विंडो में फ़िट करें",
+        "menu_actual_size": "1:1 (वास्तविक आकार)",
+        "hint": "बायाँ/मध्य: पैन  •  स्क्रॉल/दायाँ: ज़ूम",
+        "error_loading": "चित्र लोड करने में त्रुटि:\n{0}"
     }
-} 
+}

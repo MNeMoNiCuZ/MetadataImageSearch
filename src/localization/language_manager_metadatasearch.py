@@ -26,7 +26,7 @@ class LanguageManagerMetadataSearch:
                 lang_code = file[len(f"{self.base_name}-"):-5]  # Extract language code from filename
                 file_path = os.path.join(localization_dir, file)
                 try:
-                    with open(file_path, 'r', encoding='utf-8') as f:
+                    with open(file_path, 'r', encoding='utf-8-sig') as f:
                         data = json.load(f)
                         if "language" in data and "name" in data["language"]:
                             lang_name = data["language"]["name"]
@@ -54,7 +54,7 @@ class LanguageManagerMetadataSearch:
             
             if os.path.exists(lang_file):
                 try:
-                    with open(lang_file, 'r', encoding='utf-8') as f:
+                    with open(lang_file, 'r', encoding='utf-8-sig') as f:
                         data = json.load(f)
                         # Store all data except tooltips as strings
                         self.strings = {k: v for k, v in data.items() if k != "tooltips"}

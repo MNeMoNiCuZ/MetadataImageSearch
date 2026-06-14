@@ -12,11 +12,13 @@
         "ignore_term": "Término a Ignorar:",
         "copy_to": "Copiar a:",
         "move_to": "Mover a:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "Idioma:"
     },
     "buttons": {
         "browse": "Explorar",
-        "search": "Buscar"
+        "search": "Buscar",
+        "view_images": "Ver imágenes"
     },
     "frames": {
         "options": "Opciones",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "Distinguir Mayúsculas",
             "tooltip": "Distinguir entre mayúsculas y minúsculas"
+        },
+        "dark_mode": {
+            "text": "Modo Oscuro",
+            "tooltip": "Alternar entre tema oscuro y claro"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "Idioma"
+    },
+    "image_browser": {
+        "scale_label": "Escala:",
+        "loading": "Cargando {0} imágenes...",
+        "status": "{0} imágenes",
+        "status_one": "{0} imagen",
+        "status_selected": " | {0} seleccionadas",
+        "confirm_delete_title": "Confirmar eliminación",
+        "confirm_delete_one": "¿Eliminar permanentemente esta imagen?\n\nEsto no se puede deshacer.",
+        "confirm_delete_many": "¿Eliminar permanentemente {0} imágenes?\n\nEsto no se puede deshacer.",
+        "delete_error_title": "Error al eliminar",
+        "delete_error_message": "No se pudo eliminar:\n{0}\n\n{1}",
+        "menu_open_preview": "Abrir imagen (Vista previa)",
+        "menu_open_default": "Abrir con app predeterminada",
+        "menu_open_folder": "Abrir carpeta contenedora",
+        "menu_copy_path": "Copiar ruta",
+        "menu_preview_n": "Vista previa de {0} imágenes",
+        "menu_copy_paths": "Copiar todas las rutas",
+        "menu_copy_files": "Copiar archivos",
+        "menu_delete_one": "Eliminar imagen",
+        "menu_delete_many": "Eliminar {0} imágenes"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "Ajustar a ventana",
+        "menu_actual_size": "1:1 (Tamaño real)",
+        "hint": "RatIzq / RatCen: Panorámica  •  Rueda / RatDer: Zoom",
+        "error_loading": "Error al cargar imagen:\n{0}"
     }
-} 
+}

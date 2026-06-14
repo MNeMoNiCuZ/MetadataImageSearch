@@ -12,11 +12,13 @@
         "ignore_term": "Termo a Ignorar:",
         "copy_to": "Copiar para:",
         "move_to": "Mover para:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "Idioma:"
     },
     "buttons": {
         "browse": "Procurar",
-        "search": "Buscar"
+        "search": "Buscar",
+        "view_images": "Ver imagens"
     },
     "frames": {
         "options": "Opções",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "Diferenciar Maiúsculas",
             "tooltip": "Diferenciar letras maiúsculas e minúsculas"
+        },
+        "dark_mode": {
+            "text": "Modo Escuro",
+            "tooltip": "Alternar entre tema escuro e claro"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "Idioma"
+    },
+    "image_browser": {
+        "scale_label": "Escala:",
+        "loading": "Carregando {0} imagens...",
+        "status": "{0} imagens",
+        "status_one": "{0} imagem",
+        "status_selected": " | {0} selecionadas",
+        "confirm_delete_title": "Confirmar exclusão",
+        "confirm_delete_one": "Excluir permanentemente esta imagem?\n\nEsta ação não pode ser desfeita.",
+        "confirm_delete_many": "Excluir permanentemente {0} imagens?\n\nEsta ação não pode ser desfeita.",
+        "delete_error_title": "Erro ao excluir",
+        "delete_error_message": "Não foi possível excluir:\n{0}\n\n{1}",
+        "menu_open_preview": "Abrir imagem (Visualizar)",
+        "menu_open_default": "Abrir com app padrão",
+        "menu_open_folder": "Abrir pasta contendo",
+        "menu_copy_path": "Copiar caminho",
+        "menu_preview_n": "Visualizar {0} imagens",
+        "menu_copy_paths": "Copiar todos os caminhos",
+        "menu_copy_files": "Copiar arquivos",
+        "menu_delete_one": "Excluir imagem",
+        "menu_delete_many": "Excluir {0} imagens"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "Ajustar à janela",
+        "menu_actual_size": "1:1 (Tamanho real)",
+        "hint": "BotEsq / BotMeio: Pan  •  Rolar / BotDir: Zoom",
+        "error_loading": "Erro ao carregar imagem:\n{0}"
     }
-} 
+}

@@ -12,11 +12,13 @@
         "ignore_term": "QoH beQ:",
         "copy_to": "QoD veS:",
         "move_to": "Dub veS:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "Hol:"
     },
     "buttons": {
         "browse": "legh",
-        "search": "Nej!"
+        "search": "Nej!",
+        "view_images": "View Images"
     },
     "frames": {
         "options": "DuH",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "Case Sensitive",
             "tooltip": "Hol QaD"
+        },
+        "dark_mode": {
+            "text": "Hurgh mIw",
+            "tooltip": "Hurgh'e' bIngDaq tI"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "Hol"
+    },
+    "image_browser": {
+        "scale_label": "Scale:",
+        "loading": "Loading {0} images...",
+        "status": "{0} images",
+        "status_one": "{0} image",
+        "status_selected": " | {0} selected",
+        "confirm_delete_title": "Confirm Delete",
+        "confirm_delete_one": "Permanently delete this image?\n\nThis cannot be undone.",
+        "confirm_delete_many": "Permanently delete {0} images?\n\nThis cannot be undone.",
+        "delete_error_title": "Delete Error",
+        "delete_error_message": "Could not delete:\n{0}\n\n{1}",
+        "menu_open_preview": "Open Image (Preview)",
+        "menu_open_default": "Open with Default App",
+        "menu_open_folder": "Open Containing Folder",
+        "menu_copy_path": "Copy Path",
+        "menu_preview_n": "Preview {0} images",
+        "menu_copy_paths": "Copy Paths (all)",
+        "menu_copy_files": "Copy Files",
+        "menu_delete_one": "Delete image",
+        "menu_delete_many": "Delete {0} images"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "Fit to Window",
+        "menu_actual_size": "1:1 (Actual Size)",
+        "hint": "poSDaq/tlhIngan: reD  •  tlhe'/nIHDaq: Deb",
+        "error_loading": "Error loading image:\n{0}"
     }
-} 
+}

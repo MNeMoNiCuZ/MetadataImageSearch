@@ -1,9 +1,11 @@
+:: Guides the user through a virtual environment creation process
+:: Version 1.4
 @echo off
 setlocal enabledelayedexpansion
 
-echo -----------------------------------------------------------------
-echo VENV Installation Script - Helps you create a virtual environment
-echo -----------------------------------------------------------------
+echo ------------------------------------------------------------------------------
+echo VENV Installation Script - Helps you create a virtual environment (2025-12-30)
+echo ------------------------------------------------------------------------------
 
 :: Temporarily disable delayed expansion to check for "!" in the path
 setlocal disabledelayedexpansion
@@ -99,46 +101,22 @@ echo echo Virtual environment activated.
 echo cmd /k
 ) > venv_activate.bat
 
-:: Generate the venv_update.bat file for a one-time pip upgrade
-echo Generating venv_update.bat for a one-time pip upgrade...
-(
-echo @echo off
-echo cd %%~dp0
-echo echo Activating virtual environment %VENV_NAME% and upgrading pip...
-echo call "%VENV_NAME%\Scripts\activate"
-echo "%VENV_NAME%\Scripts\python.exe" -m pip install --upgrade pip
-echo echo Pip has been upgraded in the virtual environment %VENV_NAME%.
-echo echo To deactivate, manually type 'deactivate'.
-) > venv_update.bat
-
+:: Activate the virtual environment and upgrade pip
 echo.
 echo ---------------------
 echo Upgrading pip install
 echo ---------------------
-set /p UPGRADE_NOW="Do you want to upgrade your pip version now? (Y/N) (Press Enter for default 'Y'): "
-if not defined UPGRADE_NOW set UPGRADE_NOW=Y
-if /I "%UPGRADE_NOW%"=="Y" (
-    echo Upgrading pip and activating the virtual environment...
-    call venv_update.bat
-)
+echo Activating virtual environment and upgrading pip...
+call "%VENV_NAME%\Scripts\activate"
+"%VENV_NAME%\Scripts\python.exe" -m pip install --upgrade pip
 
 :: uv pip package installer
 echo.
 echo ------------------------
 echo uv pip package installer
 echo ------------------------
-echo uv is a Python package that improves package installation speed
-set /p INSTALL_UV="Do you want to install 'uv' package? (Y/N) (Press Enter for default 'Y'): "
-if "!INSTALL_UV!"=="" set INSTALL_UV=Y
-set INSTALL_UV=!INSTALL_UV:~0,1!
-
-if /I "!INSTALL_UV!"=="Y" (
-    echo Installing 'uv' package...
-    pip install uv
-    set UV_INSTALLED=1
-) else (
-    set UV_INSTALLED=0
-)
+echo Installing 'uv' package...
+pip install uv
 
 :: Check if requirements.txt exists and handle installation
 echo.
@@ -149,19 +127,11 @@ echo ---------------------------------------------
 if exist requirements.txt (
     echo requirements.txt found.
     
-    if "!UV_INSTALLED!"=="1" (
-        set /p INSTALL_REQUIREMENTS="Do you wish to run 'uv pip install -r requirements.txt'? (Y/N) (Press Enter for default 'Y'): "
-    ) else (
-        set /p INSTALL_REQUIREMENTS="Do you wish to run 'pip install -r requirements.txt'? (Y/N) (Press Enter for default 'Y'): "
-    )
+    set /p INSTALL_REQUIREMENTS="Do you wish to run 'uv pip install -r requirements.txt'? (Y/N) (Press Enter for default 'Y'): "
     
     if not defined INSTALL_REQUIREMENTS set INSTALL_REQUIREMENTS=Y
     if /I "!INSTALL_REQUIREMENTS!"=="Y" (
-        if "!UV_INSTALLED!"=="1" (
-            uv pip install -r requirements.txt
-        ) else (
-            pip install -r requirements.txt
-        )
+        uv pip install -r requirements.txt
     ) else (
         echo Skipping requirements installation.
     )

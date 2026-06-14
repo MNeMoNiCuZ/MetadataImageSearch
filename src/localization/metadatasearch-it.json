@@ -12,11 +12,13 @@
         "ignore_term": "Termine da Ignorare:",
         "copy_to": "Copia in:",
         "move_to": "Sposta in:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "Lingua:"
     },
     "buttons": {
         "browse": "Sfoglia",
-        "search": "Cerca"
+        "search": "Cerca",
+        "view_images": "Visualizza immagini"
     },
     "frames": {
         "options": "Opzioni",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "Maiuscole/Minuscole",
             "tooltip": "Distingui tra maiuscole e minuscole"
+        },
+        "dark_mode": {
+            "text": "Modalità Scura",
+            "tooltip": "Cambia tra tema scuro e chiaro"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "Lingua"
+    },
+    "image_browser": {
+        "scale_label": "Scala:",
+        "loading": "Caricamento di {0} immagini...",
+        "status": "{0} immagini",
+        "status_one": "{0} immagine",
+        "status_selected": " | {0} selezionate",
+        "confirm_delete_title": "Conferma eliminazione",
+        "confirm_delete_one": "Eliminare definitivamente questa immagine?\n\nOperazione irreversibile.",
+        "confirm_delete_many": "Eliminare definitivamente {0} immagini?\n\nOperazione irreversibile.",
+        "delete_error_title": "Errore di eliminazione",
+        "delete_error_message": "Impossibile eliminare:\n{0}\n\n{1}",
+        "menu_open_preview": "Apri immagine (Anteprima)",
+        "menu_open_default": "Apri con app predefinita",
+        "menu_open_folder": "Apri cartella contenente",
+        "menu_copy_path": "Copia percorso",
+        "menu_preview_n": "Anteprima di {0} immagini",
+        "menu_copy_paths": "Copia tutti i percorsi",
+        "menu_copy_files": "Copia file",
+        "menu_delete_one": "Elimina immagine",
+        "menu_delete_many": "Elimina {0} immagini"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "Adatta alla finestra",
+        "menu_actual_size": "1:1 (Dimensione reale)",
+        "hint": "Tasto SX / Molla: Pan  •  Scroll / Tasto DX: Zoom",
+        "error_loading": "Errore caricamento immagine:\n{0}"
     }
-} 
+}

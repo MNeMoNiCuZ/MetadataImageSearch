@@ -12,11 +12,13 @@
         "ignore_term": "排除词:",
         "copy_to": "复制到:",
         "move_to": "移动到:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "语言:"
     },
     "buttons": {
         "browse": "浏览",
-        "search": "搜索"
+        "search": "搜索",
+        "view_images": "查看图片"
     },
     "frames": {
         "options": "选项",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "区分大小写",
             "tooltip": "区分大小写进行搜索"
+        },
+        "dark_mode": {
+            "text": "暗色模式",
+            "tooltip": "在暗色和亮色主题之间切换"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "语言"
+    },
+    "image_browser": {
+        "scale_label": "缩放:",
+        "loading": "正在加载 {0} 张图片...",
+        "status": "{0} 张图片",
+        "status_one": "{0} 张图片",
+        "status_selected": " | 已选 {0} 张",
+        "confirm_delete_title": "确认删除",
+        "confirm_delete_one": "永久删除此图片?\n\n此操作不可撤销。",
+        "confirm_delete_many": "永久删除 {0} 张图片?\n\n此操作不可撤销。",
+        "delete_error_title": "删除错误",
+        "delete_error_message": "无法删除:\n{0}\n\n{1}",
+        "menu_open_preview": "打开图片（预览）",
+        "menu_open_default": "用默认应用打开",
+        "menu_open_folder": "打开所在文件夹",
+        "menu_copy_path": "复制路径",
+        "menu_preview_n": "预览 {0} 张图片",
+        "menu_copy_paths": "复制所有路径",
+        "menu_copy_files": "复制文件",
+        "menu_delete_one": "删除图片",
+        "menu_delete_many": "删除 {0} 张图片"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "适应窗口",
+        "menu_actual_size": "1:1（实际大小）",
+        "hint": "左键/中键: 平移  •  滚轮/右拖: 缩放",
+        "error_loading": "加载图片出错:\n{0}"
     }
-} 
+}

@@ -12,11 +12,13 @@
         "ignore_term": "كلمة التجاهل:",
         "copy_to": "نسخ إلى:",
         "move_to": "نقل إلى:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "اللغة:"
     },
     "buttons": {
         "browse": "تصفح",
-        "search": "بحث"
+        "search": "بحث",
+        "view_images": "عرض الصور"
     },
     "frames": {
         "options": "خيارات",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "حساس لحالة الأحرف",
             "tooltip": "التمييز بين الأحرف الكبيرة والصغيرة"
+        },
+        "dark_mode": {
+            "text": "الوضع المظلم",
+            "tooltip": "التبديل بين المظهر الداكن والفاتح"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "اللغة"
+    },
+    "image_browser": {
+        "scale_label": "المقياس:",
+        "loading": "جارٍ تحميل {0} صورة...",
+        "status": "{0} صور",
+        "status_one": "{0} صورة",
+        "status_selected": " | {0} محددة",
+        "confirm_delete_title": "تأكيد الحذف",
+        "confirm_delete_one": "هل تريد حذف هذه الصورة نهائيًا?\n\nلا يمكن التراجع عن هذا.",
+        "confirm_delete_many": "هل تريد حذف {0} صور نهائيًا?\n\nلا يمكن التراجع عن هذا.",
+        "delete_error_title": "خطأ في الحذف",
+        "delete_error_message": "تعذّر الحذف:\n{0}\n\n{1}",
+        "menu_open_preview": "فتح الصورة (معاينة)",
+        "menu_open_default": "فتح بالتطبيق الافتراضي",
+        "menu_open_folder": "فتح المجلد المحتوي",
+        "menu_copy_path": "نسخ المسار",
+        "menu_preview_n": "معاينة {0} صور",
+        "menu_copy_paths": "نسخ كل المسارات",
+        "menu_copy_files": "نسخ الملفات",
+        "menu_delete_one": "حذف الصورة",
+        "menu_delete_many": "حذف {0} صور"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "ملاءمة النافذة",
+        "menu_actual_size": "1:1 (الحجم الفعلي)",
+        "hint": "يسار/وسط: تحريك  •  تمرير/يمين: تكبير",
+        "error_loading": "خطأ في تحميل الصورة:\n{0}"
     }
-} 
+}

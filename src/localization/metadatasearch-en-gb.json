@@ -12,11 +12,13 @@
         "ignore_term": "Rather Not See:",
         "copy_to": "Pop 'Em Here:",
         "move_to": "Shift 'Em Here:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "Language:"
     },
     "buttons": {
         "browse": "Have a Look",
-        "search": "Jolly Good"
+        "search": "Jolly Good",
+        "view_images": "View Images"
     },
     "frames": {
         "options": "Settings",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "Case Sensitive",
             "tooltip": "Mind the case, won't you?"
+        },
+        "dark_mode": {
+            "text": "Dark Mode",
+            "tooltip": "Toggle between dark and light interface theme"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "Language"
+    },
+    "image_browser": {
+        "scale_label": "Scale:",
+        "loading": "Loading {0} images...",
+        "status": "{0} images",
+        "status_one": "{0} image",
+        "status_selected": " | {0} selected",
+        "confirm_delete_title": "Confirm Delete",
+        "confirm_delete_one": "Permanently delete this image?\n\nThis cannot be undone.",
+        "confirm_delete_many": "Permanently delete {0} images?\n\nThis cannot be undone.",
+        "delete_error_title": "Delete Error",
+        "delete_error_message": "Could not delete:\n{0}\n\n{1}",
+        "menu_open_preview": "Open Image (Preview)",
+        "menu_open_default": "Open with Default App",
+        "menu_open_folder": "Open Containing Folder",
+        "menu_copy_path": "Copy Path",
+        "menu_preview_n": "Preview {0} images",
+        "menu_copy_paths": "Copy Paths (all)",
+        "menu_copy_files": "Copy Files",
+        "menu_delete_one": "Delete image",
+        "menu_delete_many": "Delete {0} images"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "Fit to Window",
+        "menu_actual_size": "1:1 (Actual Size)",
+        "hint": "LMB / MMB: Pan  •  Scroll / RMB-drag: Zoom",
+        "error_loading": "Error loading image:\n{0}"
     }
-} 
+}

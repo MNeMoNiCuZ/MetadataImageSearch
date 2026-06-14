@@ -1,12 +1,24 @@
 import os
-import json
+import sys
 import configparser
 from typing import Any, Dict, Optional
+
+
+def _get_config_path():
+    if getattr(sys, 'frozen', False):
+        # Running as PyInstaller exe — place config.ini next to the exe
+        return os.path.join(os.path.dirname(sys.executable), 'config.ini')
+    else:
+        # File lives at src/config/; go up to src/ then to root/
+        src_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        root_dir = os.path.dirname(src_dir)
+        return os.path.join(root_dir, 'config.ini')
+
 
 class ConfigManagerMetadataSearch:
     def __init__(self):
         self.config = configparser.ConfigParser()
-        self.config_file = os.path.join(os.path.dirname(__file__), 'config-metadatasearch.ini')
+        self.config_file = _get_config_path()
         
         # Create default sections if they don't exist
         if not os.path.exists(self.config_file):

@@ -12,11 +12,13 @@
         "ignore_term": "Terme à Ignorer:",
         "copy_to": "Copier vers:",
         "move_to": "Déplacer vers:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "Langue:"
     },
     "buttons": {
         "browse": "Parcourir",
-        "search": "Rechercher"
+        "search": "Rechercher",
+        "view_images": "Voir les images"
     },
     "frames": {
         "options": "Options",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "Sensible à la Casse",
             "tooltip": "Distinguer majuscules et minuscules"
+        },
+        "dark_mode": {
+            "text": "Mode Sombre",
+            "tooltip": "Basculer entre le thème sombre et clair"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "Langue"
+    },
+    "image_browser": {
+        "scale_label": "Échelle :",
+        "loading": "Chargement de {0} images...",
+        "status": "{0} images",
+        "status_one": "{0} image",
+        "status_selected": " | {0} sélectionnées",
+        "confirm_delete_title": "Confirmer la suppression",
+        "confirm_delete_one": "Supprimer définitivement cette image ?\n\nCela ne peut pas être annulé.",
+        "confirm_delete_many": "Supprimer définitivement {0} images ?\n\nCela ne peut pas être annulé.",
+        "delete_error_title": "Erreur de suppression",
+        "delete_error_message": "Impossible de supprimer :\n{0}\n\n{1}",
+        "menu_open_preview": "Ouvrir l'image (Aperçu)",
+        "menu_open_default": "Ouvrir avec l'app par défaut",
+        "menu_open_folder": "Ouvrir le dossier contenant",
+        "menu_copy_path": "Copier le chemin",
+        "menu_preview_n": "Aperçu de {0} images",
+        "menu_copy_paths": "Copier tous les chemins",
+        "menu_copy_files": "Copier les fichiers",
+        "menu_delete_one": "Supprimer l'image",
+        "menu_delete_many": "Supprimer {0} images"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "Ajuster à la fenêtre",
+        "menu_actual_size": "1:1 (Taille réelle)",
+        "hint": "BG / BM: Panoramique  •  Défilement / BDroite: Zoom",
+        "error_loading": "Erreur de chargement :\n{0}"
     }
-} 
+}

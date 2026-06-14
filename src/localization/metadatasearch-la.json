@@ -12,11 +12,13 @@
         "ignore_term": "Neglegendum:",
         "copy_to": "Transcribe ad:",
         "move_to": "Transfer ad:",
-        "regex": "Regex:"
+        "regex": "Regex:",
+        "language": "Lingua:"
     },
     "buttons": {
         "browse": "Explora",
-        "search": "Quaere"
+        "search": "Quaere",
+        "view_images": "Imagines Videre"
     },
     "frames": {
         "options": "Optiones",
@@ -50,6 +52,10 @@
         "case_sensitive": {
             "text": "Litterae Exactae",
             "tooltip": "Distingue inter maiusculas et minusculas"
+        },
+        "dark_mode": {
+            "text": "Modus Obscurus",
+            "tooltip": "Inter modos obscurum et lucidum commuta"
         }
     },
     "tooltips": {
@@ -97,5 +103,32 @@
     },
     "menu": {
         "language": "Lingua"
+    },
+    "image_browser": {
+        "scale_label": "Scala:",
+        "loading": "Imagines {0} onerantur...",
+        "status": "{0} imagines",
+        "status_one": "{0} imago",
+        "status_selected": " | {0} electae",
+        "confirm_delete_title": "Deletionem Confirma",
+        "confirm_delete_one": "Hanc imaginem perpetuo delere?\n\nHoc non potest revocari.",
+        "confirm_delete_many": "{0} imagines perpetuo delere?\n\nHoc non potest revocari.",
+        "delete_error_title": "Error Deletionis",
+        "delete_error_message": "Deleri non potest:\n{0}\n\n{1}",
+        "menu_open_preview": "Imaginem Aperi (Praevisa)",
+        "menu_open_default": "Aperi cum Applicatione",
+        "menu_open_folder": "Folderum Continens Aperi",
+        "menu_copy_path": "Viam Copia",
+        "menu_preview_n": "Praevisa {0} Imaginum",
+        "menu_copy_paths": "Omnes Vias Copia",
+        "menu_copy_files": "Schedas Copia",
+        "menu_delete_one": "Imaginem Dele",
+        "menu_delete_many": "{0} Imagines Dele"
+    },
+    "image_preview": {
+        "menu_fit_to_window": "Ad Fenestram Apta",
+        "menu_actual_size": "1:1 (Verus Modus)",
+        "hint": "Sinister/Medius: Movere  •  Volutus/Dexter: Augere",
+        "error_loading": "Error onerationis imaginis:\n{0}"
     }
-} 
+}
